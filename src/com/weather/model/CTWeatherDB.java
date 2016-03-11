@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.weather.db.CTWeatherOpenHelper;
+import com.weather.util.HttpUtil;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -15,6 +16,9 @@ public class CTWeatherDB {
 	public static final String DB_NAME="CT_Weather";
 	
 	public static final int VERSION=1;
+	
+	
+	
 	
 //单列设计模式,多线程之间也能稳定
 	private SQLiteDatabase db;
@@ -186,6 +190,8 @@ public class CTWeatherDB {
 		return mList;
 
 	}
+	
+
 	
 	
 }
